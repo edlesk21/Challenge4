@@ -1,1 +1,20 @@
 /* Add screen styles below */
+.special {
+    color: red;
+}
+
+h1{
+    text-align: center;
+}
+
+.info-box {
+    width: 275px;
+    height: 525px;
+    margin: 20px left;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    padding: 20px; /* Spacing inside the box */
+    box-sizing: border-box;
+}
