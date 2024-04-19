@@ -42,15 +42,3 @@ h1{
     margin: 0 auto; 
 
 }
-
-.background{
-    align-items: center;
-    justify-content: center;
-    width: 230px;
-    height: 230px; 
-    border-radius: 40px;
-    background-color: grey;
-    /* If you want this box to not grow or shrink, you can add: */
-    flex-grow: 0;
-    flex-shrink: 0;
-}
