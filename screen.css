@@ -1,5 +1,17 @@
 /* Add screen styles below */
-.special {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .special {
     color: red;
 }
 
@@ -7,90 +19,160 @@ h1{
     text-align: center;
 }
 
-.picbox {
-    width: 230px;
-    height: 230px; 
-    border-radius: 40px;
-    background-color: red;
-    background-image: url('person.png');
-    background-size:contain ;
-    background-position: center;
-    margin: 0 auto; 
-
+.left-column {
+  color: white;
+  flex: 1;
+  margin-right: 20px;
 }
 
-.container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
-  }
-  
-  .info-box {
-    width: 275px;
-    height: 525px;
-    margin: 20px left;
-    background-color: gray;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    padding: 20px; /* Spacing inside the box */
-    box-sizing: border-box;
+.picbox {
+  width: 275px;
+  height: 230px; 
+  border-radius: 40px;
+  background-color: red;
+  background-image: url('person.png');
+  background-size:contain ;
+  background-position: center;
+  margin: 0 auto; 
+
+}
+.info-box {
+width: 320px;
+height: 525px;
+margin: 20px left;
+background-color: gray;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+overflow: hidden;
+padding: 20px; 
+box-sizing: border-box;
 }
 
 .info-box h2{
-    text-align: center;
-    margin-bottom: 0;
+text-align: center;
+margin-bottom: 0;
 }
 
 .info-box h5{
-    color: red;
-    text-align: center;
-    font-size: 12;
-    margin-top: 0;
+color: red;
+text-align: center;
+font-size: 12;
+margin-top: 0;
 }
 
-  
-  .profile-box {
-    background-color: white;
-    width: 350px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-  }
-  
-  .profile-section {
-    padding: 20px;
-    border-bottom: 1px solid #eaeaea;
-  }
-  
-  .profile-section:last-child {
-    border-bottom: none;
-  }
-  
-  .profile-section h2 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .profile-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .profile-section ul li {
-    font-size: 14px;
-    color: #666;
-    padding: 5px 0;
-  }
-  
-  .profile-section ul li::before {
-    content: '• ';
-    color: #f00; /* Red bullet points */
-    font-size: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
+.info-box p{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.center-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.center-column div, .right-column div {
+  background: grey;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: calc(33.333% - 10px);
+}
+
+.center-column div:last-child, .right-column div:last-child {
+  margin-bottom: 0;
+}
+
+.profile-section {
+  padding: 20px;
+  border-radius: 40px;
+  border-bottom: 1px solid #eaeaea;
+  color: #fff;
+}
+
+.profile-section h2{
+  margin-left:80px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-section li{
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.profile-section h4{
+  margin-top: 5px;
+}
+
+.right-column {
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.connect-button{
+  border-radius: 40px;
+  color: white;
+  background: #fff;
+}
+
+.connect-button button {
+  background-color: #FF0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.followers-info,.posts-info {
+  text-align: center;
+  margin-bottom: 20px; 
+  border-radius: 40px;
+}
+
+.follower-count-box {
+  display: flex;
+  justify-content: space-between; 
+  border-radius: 40px;
+}
+
+.followers-count, .following-count {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.followers-info div, .posts-info {
+  padding: 10px 0;
+  margin-bottom: 10px; 
+}
+
+.posts{
+  border-radius: 40px;
+  text-align: center;
+}
+
+.contact{
+  border-radius: 40px;
+}
+
+.contact p{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+strong {
+  display: block;
+  font-size: 2em; 
+  margin-top: 5px;
+}
+
+.right-column * {
+  font-family: Arial, sans-serif;
+}
